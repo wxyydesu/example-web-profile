@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+* {
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    font-Family: "Roboto Mono", monospace;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-image: url(/img/bg_waifu2x_photo_noise3_scale.png);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    margin: 0;
+}
+body::-webkit-scrollbar {
+    display: none;
+}   
+
+.container2 {
+    width: 95%;
+    height: 900px;
+    margin-top: 60px; /* Adjust based on the height of your navbar */
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.navtop {
+    width: 95%;
+    height: 6%;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.navtop a {
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    height: 30px;
+    padding: 5px 10px;
+    margin: 5px 5px;
+    border-radius: 15px;
+    color: black;
+    float: right;
+}
+
+.navtop a:hover {
+    background-color: black;
+    color: white;
+
+}
